@@ -1,11 +1,11 @@
 # Java Documentation
 
-##Description
+## Description
 
 Page that goes through basic documentation of the Java language
 
 ---
 
-##Author
+## Author
 
 Katelin Frederick
