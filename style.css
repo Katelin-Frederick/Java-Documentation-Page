@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+html, body{
+  min-width: 290px;
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+  font-family: 'Titillium Web', sans-serif, Arial, Helveritca;
+  line-height: 1.5;
+}
+
+#navbar{
+  position: fixed;
+  mix-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #4d4d4d;
+}
+
+header{
+  color: #4d4d4d;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weigt: thin;
+}
+
+#main-doc header:{
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul{
+  height: 88%;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+
+#navbar li{
+  color: #4d4d4d;
+  border: 1px solid;
+  border-bottom-width: 0px;
+  padding: 9.5px;
+  text-align: center;
+  padding-left: 45px;
+  list-style: none;
+  position: relative;
+  left:-50px;
+  width: 100%;
+}
+
+#navbar a{
+  color: #4d4d4d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc{
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article{
+  color: #4d4d4d;
+  margin: 15px;
+  font-size: 1em;
+}
+
+section li{
+  margin: 15px 0px 0px 20px;
+  list-style: square;
+}
+
+code{
+  font-family: courier;
+  display: block;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+  overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-y: hidden;
+   line-height: 2;
+   background-color: #333333;
+   color: #fff;
+  padding: 15px;
+  margin: 10px;
+    border-radius: 5px;
+}
+
+table, tr, td{
+  border: 1px solid #4d4d4d;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  text-align: center;
+  table-align: center;
+}
+
+table#table1{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media only screen and (max-width: 815px){
+  /**For Modile Phones**/
+  #navbar ul{
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar{
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  #main-doc{
+    margin-left: -10px;
+  }
+
+  code{
+    margin-left:-20px;
+    width: 100%;
+    pading: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
